@@ -1,13 +1,9 @@
 const capitalizeAndFilter = (array) => {
-  const newArray = [];
+  const capitalize = array.map(a => a.toUpperCase());
 
-  for(let i = 0; i < array.length; i++) {
-    const updated = array[i].charAt(0).toUpperCase() + array[i].slice(1);
+  const filtered = capitalize.filter(a => a.chart(0) !== 'F');
 
-    if(updated.charAt(0) !== 'F')
-      newArray.push(updated);
-  }
-  return newArray;
+  return filtered;
 };
 
 module.exports = capitalizeAndFilter;

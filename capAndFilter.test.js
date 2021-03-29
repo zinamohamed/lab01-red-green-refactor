@@ -6,6 +6,6 @@ describe('takes array capitalize all strings and filter out any that starts with
 
     const name = capitalizeAndFilter(arr);
 
-    expect(name).toEqual(['Spring', 'Summer']);
+    expect(name).toEqual(['SPRING', 'SUMMER']);
   });
 });
