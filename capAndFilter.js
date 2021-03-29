@@ -7,6 +7,7 @@ const capitalizeAndFilter = (array) => {
     if(updated.charAt(0) !== 'F')
       newArray.push(updated);
   }
+  return newArray;
 };
 
 module.exports = capitalizeAndFilter;
